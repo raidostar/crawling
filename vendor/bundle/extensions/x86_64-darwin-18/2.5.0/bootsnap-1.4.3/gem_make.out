@@ -1,0 +1,15 @@
+current directory: /Users/no9/Documents/project/crawling/vendor/bundle/gems/bootsnap-1.4.3/ext/bootsnap
+/Users/no9/.rvm/rubies/ruby-2.5.5/bin/ruby -I /Users/no9/.rvm/rubies/ruby-2.5.5/lib/ruby/site_ruby/2.5.0 -r ./siteconf20190411-68406-rf8lse.rb extconf.rb
+creating Makefile
+
+current directory: /Users/no9/Documents/project/crawling/vendor/bundle/gems/bootsnap-1.4.3/ext/bootsnap
+make "DESTDIR=" clean
+
+current directory: /Users/no9/Documents/project/crawling/vendor/bundle/gems/bootsnap-1.4.3/ext/bootsnap
+make "DESTDIR="
+compiling bootsnap.c
+linking shared-object bootsnap/bootsnap.bundle
+
+current directory: /Users/no9/Documents/project/crawling/vendor/bundle/gems/bootsnap-1.4.3/ext/bootsnap
+make "DESTDIR=" install
+/usr/local/opt/coreutils/bin/ginstall -c -m 0755 bootsnap.bundle ./.gem.20190411-68406-93wqp7/bootsnap

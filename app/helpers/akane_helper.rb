@@ -1,0 +1,2 @@
+module AkaneHelper
+end

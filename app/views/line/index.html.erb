@@ -1,0 +1,12 @@
+<%= @test1 %>
+<hr/>
+<%= @tr_num %>
+<hr/>
+<%
+  @array_tr.each do |f|
+    array_td = f.split("\n")
+    if (array_td[@col_num-1]!="0"&&array_td[@col_num-1]!="¥ 0") %>
+      <%= f %><br/>
+<%  end
+  end
+%>

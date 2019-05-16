@@ -1,0 +1,49 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  date: 2019-04-17
+  platform_id: 1
+  advertiser_id: MyString
+  advertiser_name: MyString
+  group_advertiser_id: 1
+  order_id: MyString
+  order_name: MyString
+  group_order_id: 1
+  schedule_id: MyString
+  schedule_name: MyString
+  creative_id: MyString
+  creative_name: MyString
+  creative_image_url: MyText
+  click_url: MyText
+  imp: 1
+  click: 1
+  cv: 1
+  gross: 9.99
+  net: 9.99
+  created_at: 2019-04-17 14:07:17
+  updated_at: 2019-04-17 14:07:17
+  lock_version: 1
+
+two:
+  date: 2019-04-17
+  platform_id: 1
+  advertiser_id: MyString
+  advertiser_name: MyString
+  group_advertiser_id: 1
+  order_id: MyString
+  order_name: MyString
+  group_order_id: 1
+  schedule_id: MyString
+  schedule_name: MyString
+  creative_id: MyString
+  creative_name: MyString
+  creative_image_url: MyText
+  click_url: MyText
+  imp: 1
+  click: 1
+  cv: 1
+  gross: 9.99
+  net: 9.99
+  created_at: 2019-04-17 14:07:17
+  updated_at: 2019-04-17 14:07:17
+  lock_version: 1

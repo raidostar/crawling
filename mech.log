@@ -1,0 +1,32 @@
+# Logfile created on 2019-04-23 18:58:22 +0900 by logger.rb/61378
+I, [2019-04-23T18:58:30.626665 #20431]  INFO -- : form encoding: UTF-8
+D, [2019-04-23T18:58:30.627042 #20431] DEBUG -- : query: "utf8=%E2%9C%93&authenticity_token=NRs6KQqMvbB7X8759pwz3UlILJe9mlX0u7bDhZHKcGFec9b3hOzp9qtYKhgUG2d3tTUTo3zcGUeoJ6fJzbuAfQ%3D%3D&client%5Bemail%5D=isaka%40fullout.jp&client%5Bpassword%5D="
+I, [2019-04-23T18:58:30.627873 #20431]  INFO -- : Net::HTTP::Post: /client/confirm_sign_in
+D, [2019-04-23T18:58:30.627968 #20431] DEBUG -- : request-header: accept-encoding => gzip,deflate,identity
+D, [2019-04-23T18:58:30.628036 #20431] DEBUG -- : request-header: accept => */*
+D, [2019-04-23T18:58:30.628103 #20431] DEBUG -- : request-header: user-agent => Mechanize/2.7.6 Ruby/2.5.5p157 (http://github.com/sparklemotion/mechanize/)
+D, [2019-04-23T18:58:30.628208 #20431] DEBUG -- : request-header: accept-charset => ISO-8859-1,utf-8;q=0.7,*;q=0.7
+D, [2019-04-23T18:58:30.628293 #20431] DEBUG -- : request-header: accept-language => en-us,en;q=0.5
+D, [2019-04-23T18:58:30.628421 #20431] DEBUG -- : request-header: cookie => _session_id=08942583c717382e6e39ff6a40af9f0e
+D, [2019-04-23T18:58:30.628549 #20431] DEBUG -- : request-header: host => ads.gunosy.com
+D, [2019-04-23T18:58:30.628696 #20431] DEBUG -- : request-header: referer => https://ads.gunosy.com/client/sign_in
+D, [2019-04-23T18:58:30.628802 #20431] DEBUG -- : request-header: content-type => application/x-www-form-urlencoded
+D, [2019-04-23T18:58:30.628867 #20431] DEBUG -- : request-header: content-length => 185
+I, [2019-04-23T18:58:30.734168 #20431]  INFO -- : status: Net::HTTPOK 1.1 200 OK
+D, [2019-04-23T18:58:30.734336 #20431] DEBUG -- : response-header: cache-control => max-age=0, private, must-revalidate
+D, [2019-04-23T18:58:30.734418 #20431] DEBUG -- : response-header: content-encoding => gzip
+D, [2019-04-23T18:58:30.734563 #20431] DEBUG -- : response-header: content-type => text/html; charset=utf-8
+D, [2019-04-23T18:58:30.734702 #20431] DEBUG -- : response-header: etag => W/"31fc911d20f9d093080b6080d1f72e20"
+D, [2019-04-23T18:58:30.734892 #20431] DEBUG -- : response-header: server => nginx/1.12.1
+D, [2019-04-23T18:58:30.735088 #20431] DEBUG -- : response-header: x-content-type-options => nosniff
+D, [2019-04-23T18:58:30.735303 #20431] DEBUG -- : response-header: x-frame-options => SAMEORIGIN
+D, [2019-04-23T18:58:30.735399 #20431] DEBUG -- : response-header: x-request-id => 0b5f7e12-6b88-4663-af69-cfa629a736d2
+D, [2019-04-23T18:58:30.735490 #20431] DEBUG -- : response-header: x-runtime => 0.016300
+D, [2019-04-23T18:58:30.735563 #20431] DEBUG -- : response-header: x-xss-protection => 1; mode=block
+D, [2019-04-23T18:58:30.735620 #20431] DEBUG -- : response-header: content-length => 1596
+D, [2019-04-23T18:58:30.735678 #20431] DEBUG -- : response-header: date => Tue, 23 Apr 2019 09:58:30 GMT
+D, [2019-04-23T18:58:30.735745 #20431] DEBUG -- : response-header: connection => keep-alive
+D, [2019-04-23T18:58:30.735827 #20431] DEBUG -- : response-header: vary => Accept-Encoding
+D, [2019-04-23T18:58:30.735967 #20431] DEBUG -- : Read 1525 bytes (1525 total)
+D, [2019-04-23T18:58:30.736106 #20431] DEBUG -- : Read 71 bytes (1596 total)
+D, [2019-04-23T18:58:30.736422 #20431] DEBUG -- : gzip response
