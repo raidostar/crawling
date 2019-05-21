@@ -10,7 +10,7 @@ class Line
     'User-Agent': "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_11_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/52.0.2743.116 Safari/537.36",
     'Accept': "text/html,application/xhtml+xml,application/xml;q=0.9,imgwebp,*/*;q=0.8"
   }.freeze
-  DEFAULT_SLEEP = 3.freeze
+  DEFAULT_SLEEP = 8.freeze
 
   # Poltergeist
   def initialize(option = {})
@@ -29,7 +29,7 @@ class Line
   end
 
   def daily_report
-
+    obtain_login_cookie
   end
 
   private
@@ -51,27 +51,18 @@ class Line
   def login
     action do
       @session.visit("https://account.line.biz/login?redirectUri=https%3A%2F%2Fadmanager.line.biz&status=success")
+      sleep DEFAULT_SLEEP / 2
+
       agent.find(:xpath, '/html/body/div/div/div[3]/div/div[3]/div[2]/a').click
 
       element1 = agent.find(:xpath, '/html/body/div/div/div[3]/div/div[3]/div[2]/form/div/div[1]/input')
-      element1.send_keys(ENV["LINE_ACCOUNT1"])
-      sleep 1.freeze
-      element1.send_keys(ENV["LINE_ACCOUNT2"])
-      sleep 2.freeze
-      element1.send_keys(ENV["LINE_ACCOUNT3"])
-
-      sleep DEFAULT_SLEEP
+      element1.send_keys(ENV["LINE_ACCOUNT"])
 
       element2 = agent.find(:xpath, '/html/body/div/div/div[3]/div/div[3]/div[2]/form/div/div[2]/input')
-      element2.send_keys(ENV["LINE_PASSWORD1"])
-      sleep 1.freeze
-      element2.send_keys(ENV["LINE_PASSWORD2"])
-      sleep 2.freeze
-      element2.send_keys(ENV["LINE_PASSWORD3"])
+      element2.send_keys(ENV["LINE_PASSWORD"])
 
       element3 = agent.find(:xpath, "//button[@type='submit']")
       element3.click
-      sleep 5.freeze
     end
   end
 
@@ -81,15 +72,20 @@ class Line
   end
 
   agent.visit("https://admanager.line.biz/adaccount/")
-  sleep DEFAULT_SLEEP
-  #agent.execute_script
-  @doc = agent.body
-  agent.evaluate_script(@doc)
-
-  @doc2 = agent.within(sample)
+  sleep DEFAULT_SLEEP / 4
 
   test1 = agent.find(:xpath, "//*[@id='main']/div/div[2]/div[2]/table/thead/tr").text
-  @array_col = test1.split("\n")
+  array_col = test1.split("\n")
   @test2 = agent.find(:xpath, "//*[@id='main']/div/div[3]/table/tbody").text
-  @test3 = agent.find(:xpath, "//*[@id='main']/div/div[3]/table/tbody/tr[1]/td[6]/div").text
+  array_tbody = @test2.split("\n")
+
+  @col_num = array_col.size
+  td_num = array_tbody.size
+  @tr_num = td_num / @col_num
+
+  @array_tr = []
+  for i in 1..@tr_num
+    @array_tr[i-1] = agent.find(:xpath, "//*[@id='main']/div/div[3]/table/tbody/tr["+i.to_s+"]").text
+  end
+
 end

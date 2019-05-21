@@ -12,7 +12,7 @@
 
 ActiveRecord::Schema.define(version: 2019_04_17_050717) do
 
-  create_table "daily_reports", options: "ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci", force: :cascade do |t|
+  create_table "daily_reports", options: "ENGINE=InnoDB DEFAULT CHARSET=utf8mb4", force: :cascade do |t|
     t.date "date"
     t.integer "platform_id"
     t.string "advertiser_id"
