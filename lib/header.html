@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <!-- added at 20190426 by Kevin -->
+  <!-- Anti-flicker snippet (recommended)  -->
+  <style>.async-hide { opacity: 0 !important} </style>
+  <script>(function(a,s,y,n,c,h,i,d,e){s.className+=' '+y;h.start=1*new Date;
+    h.end=i=function(){s.className=s.className.replace(RegExp(' ?'+y),'')};
+    (a[n]=a[n]||[]).hide=h;setTimeout(function(){i();h.end=null},c);h.timeout=c;
+  })(window,document.documentElement,'async-hide','dataLayer',4000,
+{'GTM-P7HNT6R':true});</script>
+
+<!-- iframe height postmessage -->
+<script type="text/javascript">
+  window.onload = function() {
+
+    var eloffsetHeight = document.documentElement.offsetHeight;
+
+    window.parent.postMessage(eloffsetHeight, "*");
+
+  };
+</script> 
+
+<!-- animate.css -->
+<link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+  />
+
+<!-- highlight -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+<script>
+$(window).scroll(function (){　// マーカーの動きをつける
+  $(".marker-animation").each(function(){
+    var position = $(this).offset().top; //ページの一番上から要素までの距離を取得
+    var scroll = $(window).scrollTop(); //スクロールの位置を取得
+    var windowHeight = $(window).height(); //ウインドウの高さを取得
+    if (scroll > position - windowHeight){ //スクロール位置が要素の位置を過ぎたとき
+      $(this).addClass('active'); //クラス「active」を与える
+    }
+  });
+});
+</script>
+
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-135640445-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-135640445-1', { 'optimize_id': 'GTM-P7HNT6R'});
+</script>
+<!-- end added at 20190426 -->
+
+<!-- Google Tag Manager -->
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+  new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-56QHZ5Z');</script>
+<!-- End Google Tag Manager -->
+
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-97832147-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-97832147-1');
+</script>
+<!-- Global site tag (gtag.js) - Google Analytics -->
+
+<!-- Font awesome -->
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.1/css/all.css" integrity="sha384-O8whS3fhG2OnA5Kas0Y9l3cfpmYjapjI0E4theH4iuMD+pLhbf6JI0jIMfYcK3yZ" crossorigin="anonymous">
+
+<!-- jquery -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+<!-- hory custom -->
+<!-- <script src="https://assets.sateimyfudo.online/assets/common/js/countDown.js"></script>
+<script src="https://assets.sateimyfudo.online/assets/common/js/searchWindow.js"></script>
+<script src="https://assets.sateimyfudo.online/assets/common/js/pt.js"></script>
+<link rel="stylesheet" type="text/css" href="https://assets.sateimyfudo.online/assets/common/css/countDown.css">
+<link rel="stylesheet" type="text/css" href="https://assets.sateimyfudo.online/assets/common/css/animation.css">
+<link rel="stylesheet" type="text/css" href="https://assets.sateimyfudo.online/assets/common/css/optimization.css"> -->
+<!-- pt.js -->
+<script type="text/javascript">
+  document.addEventListener('DOMContentLoaded', () => {
+    const element = document.getElementById("pt");
+
+    if(element) {
+      console.log('pt tag detected');
+      const rate = element.getAttribute("rate");
+      var rand = Math.floor( Math.random() * 100);
+      if (rand < rate){
+        console.log('rate is working');
+        window._pt_lt = new Date().getTime();
+        window._pt_sp_2 = [];
+        _pt_sp_2.push('setAccount,6bcc6511');
+        var _protocol = (("https:" == document.location.protocol) ? " https://" : " http://");
+        (function() {
+            var atag = document.createElement('script'); atag.type = 'text/javascript'; atag.async = true;
+            atag.src = _protocol + 'js.ptengine.jp/pta.js';
+            var s = document.getElementsByTagName('script')[0];
+            s.parentNode.insertBefore(atag, s);
+        })();
+      }
+    }
+  });
+</script>
+<!-- pt.js -->
+
+<!-- hory custom -->
+
+<!-- Adx -->
+<script async='async' src='https://www.googletagservices.com/tag/js/gpt.js'></script>
+<script>
+  var googletag = googletag || {};
+  googletag.cmd = googletag.cmd || [];
+</script>
+
+<script>
+  googletag.cmd.push(function() {
+    googletag.defineSlot('/9176203/1593580', [[300, 250], 'fluid'], 'div-gpt-ad-1537844617512-0').
+    defineSizeMapping(googletag.sizeMapping().
+      addSize([360, 0], [[336, 280],'fluid']).
+      addSize([320, 0], [[300, 250],'fluid']).
+      build()).
+    addService(googletag.pubads());
+    googletag.defineSlot('/9176203/1593581', ['fluid'], 'div-gpt-ad-1537851146573-0').
+    defineSizeMapping(googletag.sizeMapping().
+      addSize([414, 0], [[406, 112],'fluid']).
+      addSize([412, 0], [[404, 111],'fluid']).
+      addSize([411, 0], [[403, 111],'fluid']).
+      addSize([375, 0], [[368, 101],'fluid']).
+      addSize([360, 0], [[353, 97],'fluid']).
+      addSize([320, 0], [[314, 85],'fluid']).
+      build()).
+    addService(googletag.pubads());
+    googletag.defineSlot('/9176203/1593583', ['fluid'], 'div-gpt-ad-1537855919225-0').
+    defineSizeMapping(googletag.sizeMapping().
+      addSize([414, 0], [[406, 112],'fluid']).
+      addSize([412, 0], [[404, 111],'fluid']).
+      addSize([411, 0], [[403, 111],'fluid']).
+      addSize([375, 0], [[368, 101],'fluid']).
+      addSize([360, 0], [[353, 97],'fluid']).
+      addSize([320, 0], [[314, 85],'fluid']).
+      build()).
+    addService(googletag.pubads());
+    googletag.defineSlot('/9176203/1593584', ['fluid'], 'div-gpt-ad-1537856612998-0').
+    defineSizeMapping(googletag.sizeMapping().
+      addSize([414, 0], [[406, 112],'fluid']).
+      addSize([412, 0], [[404, 111],'fluid']).
+      addSize([411, 0], [[403, 111],'fluid']).
+      addSize([375, 0], [[368, 101],'fluid']).
+      addSize([360, 0], [[353, 97],'fluid']).
+      addSize([320, 0], [[314, 85],'fluid']).
+      build()).
+    addService(googletag.pubads());
+    googletag.pubads().enableSingleRequest();
+    googletag.enableServices();
+  });
+</script>
+
+<meta charset="UTF-8">
+<title>「え、これが私！？」年齢肌ケアには絶対コレ！脱・おば肌目指す!?神コスメがスゴイ！ – Beauty News</title>
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<meta name="description" content="<?php bloginfo('description'); ?>" />
+<meta name="keywords" content="#" />
+<meta name="author" content="" />
+<link rel="stylesheet" type="text/css" href="<?php echo get_template_directory_uri(); ?>/rtl.css" />
+<link rel="stylesheet" href="<?php bloginfo('stylesheet_url'); echo '?' . filemtime( get_stylesheet_directory() . '/style.css'); ?>" type="text/css" />
+<link rel="stylesheet" type="text/css" href="<?php echo get_template_directory_uri(); ?>/editor.css" />
+
+<!-- Facebook Pixel Code -->
+<script>
+  !function(f,b,e,v,n,t,s){if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+    n.callMethod.apply(n,arguments):n.queue.push(arguments)};if(!f._fbq)f._fbq=n;
+    n.push=n;n.loaded=!0;n.version='2.0';n.queue=[];t=b.createElement(e);t.async=!0;
+    t.src=v;s=b.getElementsByTagName(e)[0];s.parentNode.insertBefore(t,s)}(window,
+      document,'script','https://connect.facebook.net/en_US/fbevents.js');
+fbq('init', '298638757232981'); // Insert your pixel ID here.
+fbq('track', 'PageView');
+</script>
+<noscript><img height="1" width="1" style="display:none"
+  src="https://www.facebook.com/tr?id=298638757232981&ev=PageView&noscript=1"
+  /></noscript>
+  <!-- DO NOT MODIFY -->
+  <!-- End Facebook Pixel Code -->
+
+  <!-- Yahoo Code for your Target List -->
+  <script type="text/javascript" language="javascript">
+    /* <![CDATA[ */
+    var yahoo_retargeting_id = '415G4JLO72';
+    var yahoo_retargeting_label = '';
+    var yahoo_retargeting_page_type = '';
+    var yahoo_retargeting_items = [{item_id: '', category_id: '', price: '', quantity: ''}];
+    /* ]]> */
+  </script>
+  <script type="text/javascript" language="javascript" src="//b92.yahoo.co.jp/js/s_retargeting.js"></script>
+
+  <!-- suzuki custom -->
+  <!-- <script src="https://assets.sateimyfudo.online/assets/common/js/numberOfPeople1.js"></script>
+  <script src="https://assets.sateimyfudo.online/assets/common/js/numberOfPeople2.js"></script>
+  <script src="https://assets.sateimyfudo.online/assets/common/js/numberOfPeople3.js"></script> -->
+  <!-- suzuki custom -->
+</head>
+<body>
+  <!-- Google Tag Manager (noscript) -->
+  <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-56QHZ5Z"
+    height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+    <!-- End Google Tag Manager (noscript) -->

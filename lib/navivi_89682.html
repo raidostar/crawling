@@ -1,0 +1,2046 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <!-- added at 20190426 by Kevin -->
+  <!-- Anti-flicker snippet (recommended)  -->
+  <style>.async-hide { opacity: 0 !important} </style>
+  <script>(function(a,s,y,n,c,h,i,d,e){s.className+=' '+y;h.start=1*new Date;
+    h.end=i=function(){s.className=s.className.replace(RegExp(' ?'+y),'')};
+    (a[n]=a[n]||[]).hide=h;setTimeout(function(){i();h.end=null},c);h.timeout=c;
+  })(window,document.documentElement,'async-hide','dataLayer',4000,
+{'GTM-P7HNT6R':true});</script>
+
+<!-- iframe height postmessage -->
+<script type="text/javascript">
+  window.onload = function() {
+
+    var eloffsetHeight = document.documentElement.offsetHeight;
+
+    window.parent.postMessage(eloffsetHeight, "*");
+
+  };
+</script> 
+
+<!-- animate.css -->
+<link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+  />
+
+<!-- highlight -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+<script>
+$(window).scroll(function (){　// マーカーの動きをつける
+  $(".marker-animation").each(function(){
+    var position = $(this).offset().top; //ページの一番上から要素までの距離を取得
+    var scroll = $(window).scrollTop(); //スクロールの位置を取得
+    var windowHeight = $(window).height(); //ウインドウの高さを取得
+    if (scroll > position - windowHeight){ //スクロール位置が要素の位置を過ぎたとき
+      $(this).addClass('active'); //クラス「active」を与える
+    }
+  });
+});
+</script>
+
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-135640445-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-135640445-1', { 'optimize_id': 'GTM-P7HNT6R'});
+</script>
+<!-- end added at 20190426 -->
+
+<!-- Google Tag Manager -->
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+  new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-56QHZ5Z');</script>
+<!-- End Google Tag Manager -->
+
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-97832147-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-97832147-1');
+</script>
+<!-- Global site tag (gtag.js) - Google Analytics -->
+
+<!-- Font awesome -->
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.1/css/all.css" integrity="sha384-O8whS3fhG2OnA5Kas0Y9l3cfpmYjapjI0E4theH4iuMD+pLhbf6JI0jIMfYcK3yZ" crossorigin="anonymous">
+
+<!-- jquery -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+<!-- hory custom -->
+<!-- <script src="https://assets.sateimyfudo.online/assets/common/js/countDown.js"></script>
+<script src="https://assets.sateimyfudo.online/assets/common/js/searchWindow.js"></script>
+<script src="https://assets.sateimyfudo.online/assets/common/js/pt.js"></script>
+<link rel="stylesheet" type="text/css" href="https://assets.sateimyfudo.online/assets/common/css/countDown.css">
+<link rel="stylesheet" type="text/css" href="https://assets.sateimyfudo.online/assets/common/css/animation.css">
+<link rel="stylesheet" type="text/css" href="https://assets.sateimyfudo.online/assets/common/css/optimization.css"> -->
+<!-- pt.js -->
+<script type="text/javascript">
+  document.addEventListener('DOMContentLoaded', () => {
+    const element = document.getElementById("pt");
+
+    if(element) {
+      console.log('pt tag detected');
+      const rate = element.getAttribute("rate");
+      var rand = Math.floor( Math.random() * 100);
+      if (rand < rate){
+        console.log('rate is working');
+        window._pt_lt = new Date().getTime();
+        window._pt_sp_2 = [];
+        _pt_sp_2.push('setAccount,6bcc6511');
+        var _protocol = (("https:" == document.location.protocol) ? " https://" : " http://");
+        (function() {
+            var atag = document.createElement('script'); atag.type = 'text/javascript'; atag.async = true;
+            atag.src = _protocol + 'js.ptengine.jp/pta.js';
+            var s = document.getElementsByTagName('script')[0];
+            s.parentNode.insertBefore(atag, s);
+        })();
+      }
+    }
+  });
+</script>
+<!-- pt.js -->
+
+<!-- hory custom -->
+
+<!-- Adx -->
+<script async='async' src='https://www.googletagservices.com/tag/js/gpt.js'></script>
+<script>
+  var googletag = googletag || {};
+  googletag.cmd = googletag.cmd || [];
+</script>
+
+<script>
+  googletag.cmd.push(function() {
+    googletag.defineSlot('/9176203/1593580', [[300, 250], 'fluid'], 'div-gpt-ad-1537844617512-0').
+    defineSizeMapping(googletag.sizeMapping().
+      addSize([360, 0], [[336, 280],'fluid']).
+      addSize([320, 0], [[300, 250],'fluid']).
+      build()).
+    addService(googletag.pubads());
+    googletag.defineSlot('/9176203/1593581', ['fluid'], 'div-gpt-ad-1537851146573-0').
+    defineSizeMapping(googletag.sizeMapping().
+      addSize([414, 0], [[406, 112],'fluid']).
+      addSize([412, 0], [[404, 111],'fluid']).
+      addSize([411, 0], [[403, 111],'fluid']).
+      addSize([375, 0], [[368, 101],'fluid']).
+      addSize([360, 0], [[353, 97],'fluid']).
+      addSize([320, 0], [[314, 85],'fluid']).
+      build()).
+    addService(googletag.pubads());
+    googletag.defineSlot('/9176203/1593583', ['fluid'], 'div-gpt-ad-1537855919225-0').
+    defineSizeMapping(googletag.sizeMapping().
+      addSize([414, 0], [[406, 112],'fluid']).
+      addSize([412, 0], [[404, 111],'fluid']).
+      addSize([411, 0], [[403, 111],'fluid']).
+      addSize([375, 0], [[368, 101],'fluid']).
+      addSize([360, 0], [[353, 97],'fluid']).
+      addSize([320, 0], [[314, 85],'fluid']).
+      build()).
+    addService(googletag.pubads());
+    googletag.defineSlot('/9176203/1593584', ['fluid'], 'div-gpt-ad-1537856612998-0').
+    defineSizeMapping(googletag.sizeMapping().
+      addSize([414, 0], [[406, 112],'fluid']).
+      addSize([412, 0], [[404, 111],'fluid']).
+      addSize([411, 0], [[403, 111],'fluid']).
+      addSize([375, 0], [[368, 101],'fluid']).
+      addSize([360, 0], [[353, 97],'fluid']).
+      addSize([320, 0], [[314, 85],'fluid']).
+      build()).
+    addService(googletag.pubads());
+    googletag.pubads().enableSingleRequest();
+    googletag.enableServices();
+  });
+</script>
+
+<meta charset="UTF-8">
+<title>「え、これが私！？」年齢肌ケアには絶対コレ！脱・おば肌目指す!?神コスメがスゴイ！ – Beauty News</title>
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<meta name="description" content="<?php bloginfo('description'); ?>" />
+<meta name="keywords" content="#" />
+<meta name="author" content="" />
+<link rel="stylesheet" type="text/css" href="<?php echo get_template_directory_uri(); ?>/rtl.css" />
+<link rel="stylesheet" href="<?php bloginfo('stylesheet_url'); echo '?' . filemtime( get_stylesheet_directory() . '/style.css'); ?>" type="text/css" />
+<link rel="stylesheet" type="text/css" href="<?php echo get_template_directory_uri(); ?>/editor.css" />
+
+<!-- Facebook Pixel Code -->
+<script>
+  !function(f,b,e,v,n,t,s){if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+    n.callMethod.apply(n,arguments):n.queue.push(arguments)};if(!f._fbq)f._fbq=n;
+    n.push=n;n.loaded=!0;n.version='2.0';n.queue=[];t=b.createElement(e);t.async=!0;
+    t.src=v;s=b.getElementsByTagName(e)[0];s.parentNode.insertBefore(t,s)}(window,
+      document,'script','https://connect.facebook.net/en_US/fbevents.js');
+fbq('init', '298638757232981'); // Insert your pixel ID here.
+fbq('track', 'PageView');
+</script>
+<noscript><img height="1" width="1" style="display:none"
+  src="https://www.facebook.com/tr?id=298638757232981&ev=PageView&noscript=1"
+  /></noscript>
+  <!-- DO NOT MODIFY -->
+  <!-- End Facebook Pixel Code -->
+
+  <!-- Yahoo Code for your Target List -->
+  <script type="text/javascript" language="javascript">
+    /* <![CDATA[ */
+    var yahoo_retargeting_id = '415G4JLO72';
+    var yahoo_retargeting_label = '';
+    var yahoo_retargeting_page_type = '';
+    var yahoo_retargeting_items = [{item_id: '', category_id: '', price: '', quantity: ''}];
+    /* ]]> */
+  </script>
+  <script type="text/javascript" language="javascript" src="//b92.yahoo.co.jp/js/s_retargeting.js"></script>
+
+  <!-- suzuki custom -->
+  <!-- <script src="https://assets.sateimyfudo.online/assets/common/js/numberOfPeople1.js"></script>
+  <script src="https://assets.sateimyfudo.online/assets/common/js/numberOfPeople2.js"></script>
+  <script src="https://assets.sateimyfudo.online/assets/common/js/numberOfPeople3.js"></script> -->
+  <!-- suzuki custom -->
+</head>
+<body>
+  <!-- Google Tag Manager (noscript) -->
+  <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-56QHZ5Z"
+    height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+    <!-- End Google Tag Manager (noscript) --><style type="text/css">
+/* blog */
+li.blog_container {
+    display: table;
+    clear: both;
+    width: 100%;
+    height: auto;
+    padding-bottom: 5%;
+    margin-bottom: 5%;
+    border-bottom: dotted #888 1px;
+    background-color: #fff;
+}
+
+li.blog_container a {
+    display: block;
+    text-decoration: none;
+}
+
+li.blog_container img {
+    vertical-align: top;
+    display: table-cell;
+    width: 25%;
+    height: auto;
+    display: block;
+    margin: 5px;
+    float: left;
+}
+
+li.blog_container div {
+    width: 100%;
+    display: table-cell;
+    vertical-align: top;
+    float: right;
+}
+
+li.blog_container div h2 {
+    padding-top: 5px;
+}
+
+span.category {
+    display: inline-block;
+    font-size: 1.2rem;
+    text-align: center;
+    padding: 3px 15px;
+    color: #fff;
+    border-radius: 3px;
+    background-color: #ddd;
+    margin: 5px 10px 5px 0;
+}
+
+span.post_date {
+    width: 100%;
+    display: block;
+    font-size: 1.2rem;
+    color: #888;
+    text-align: left;
+    padding: 3px 0;
+    border-radius: 3px;
+    margin: 5px 10px 5px 0;
+}
+
+li.blog_container div p.excerpt {
+    padding-top: 5px;
+    text-align: left;
+    width: 100%;
+    color: #444;
+    font-size: 1.6rem;
+    line-height: 2rem;
+    letter-spacing: 1px;
+}
+
+/* pager */
+
+.wp-pagenavi {
+    display: flex!important;
+    flex-flow: row wrap!important;
+    justify-content: center!important;
+    margin: 0 auto!important;
+    width: 300px!important;
+}
+
+.wp-pagenavi  .page {
+    background-color: #666!important;
+    padding: 8px 10px!important;
+    border-radius: 3px!important;
+    font-size: 1.5rem!important;
+    color: #fff!important;
+    margin: 0 3px!important;
+}
+
+.wp-pagenavi  .current {
+
+    background-color: #f67e69!important;
+    padding: 8px 10px!important;
+    border-radius: 3px!important;
+    font-size: 1.5rem!important;
+    color: #fff!important;
+    margin: 0 3px!important;
+}
+
+.wp-pagenavi a.nextpostslink,
+.wp-pagenavi a.previouspostslink {
+    background-color: #f67e69!important;
+    padding: 8px 20px!important;
+    border-radius: 3px!important;
+    font-size: 1.5rem!important;
+    color: #fff!important;
+    margin: 0 10px!important;
+}
+
+.wp-pagenavi a:hover {
+    opacity: .7!important;
+}
+
+/*single-page.php
+------------------------------------------------------------*/
+
+#page_list {
+    margin: 10px;
+}
+
+#page_list li a{
+    font-size: 1.4rem;
+    text-align: left;
+    color: #444;
+    padding: 0;
+}
+
+#page_list li {
+    padding: 0;
+    margin: 0;
+
+}
+
+#page_list li a span {
+    color: #444;
+    font-size: 1.4rem;
+    padding: 0;
+}
+
+#page_list li span {
+    color: #444;
+    font-size: 1.4rem;
+}
+
+#container h1{
+    clear: both;
+    display: block;
+    width: 100%;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    line-height: 3.5rem;
+    border-bottom: 1px dotted #444;
+    text-align: left;
+}
+
+#container #content {
+    padding-top: 10%;
+    width: 98%;
+    margin: 0 auto;
+    font-size: 1.5rem;
+    line-height: 2.8rem;
+    overflow: hidden;
+}
+
+/* Form Editer Default Style */
+
+#container #content h2 {
+    display: block;
+    padding: 10px 1%;
+    box-sizing: border-box;
+    width: 100%;
+    text-align: left;
+    text-indent: 1.5rem;
+
+    // background-color: #f78aa9;
+    // color: #fff;
+    font-weight: bold;
+    letter-spacing: 1px;
+    position: relative;
+    margin: 30px 0;
+    // border-bottom: 1px solid #ccc;
+}
+
+#container #content img {
+    width: 100%;
+    height: auto;
+}
+
+/*
+#container #content h2:after {
+    content: "";
+    display: block;
+    width: 0;
+    height: 0;
+    border: 10px transparent solid;
+    border-top: 20px #f78aa9 solid;
+    position: absolute;
+    bottom: -25px;
+    left: 2%;
+}
+*/
+
+#container #content h3 {
+    display: block;
+    margin: 30px 0;
+    text-align: left;
+}
+
+#container #content p {
+    font-size: 11pt;
+    margin: 3rem 0;
+    line-height: 1.6rem;
+}
+
+#container #content a {
+    font-size: 1.5rem;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+#container #content a:hover {
+    opacity: .7;
+}
+
+
+/* Commennt type1*/
+
+/*.comment-respond {
+    width: 100%;
+    padding: 0 2%;
+    box-sizing: border-box;
+}
+
+.comment-respond h3 {
+    display: none;
+}
+
+.comment-respond small {
+    font-size: 1.4rem;
+    color: #444;
+    text-align: left;
+}
+
+.logged-in-as a,
+.logged-in-as{
+    font-size: 1.2rem;
+    color: #f78aa9;
+    text-decoration: underline;
+}
+
+.comment-respond textarea {
+    width: 100%;
+    border: 3px #ccc solid;
+}
+
+.comment-respond input[type="submit"] {
+    padding: 5px 0;
+    width: 200px;
+    background-color: #f78aa9;
+    margin: 10px 0 0 0;
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #fff;
+}
+
+#comments {
+    font-size: 1.8rem;
+    width: 100%;
+    text-indent: 1rem;
+    padding: 5px 0;
+    border-top: 3px solid #f78aa9;
+    border-bottom: 3px solid #f78aa9;
+}
+
+.comments-title {
+    display: none;
+}
+
+
+.commentlist {
+    padding: 2% 0;
+    box-sizing: border-box;
+    width: 100%;
+}
+
+.commentlist li {
+    padding: 2%;
+    border-bottom: 1px solid #eee;
+}
+
+
+.commentlist li:last-child {
+    border-bottom: 1px dotted #444;
+}
+
+.commentmetadata {
+    font-size: 1.4rem;
+}*/
+
+
+/* Commennt type2*/
+
+.comments {
+    width: 100%;
+    padding: 0 2%;
+    box-sizing: border-box;
+}
+
+.comment-respond small {
+    font-size: 1.4rem;
+    color: #444;
+    text-align: left;
+}
+
+.logged-in-as a,
+.logged-in-as{
+    font-size: 1.2rem;
+    color: #f78aa9;
+    text-decoration: underline;
+}
+
+.comment-respond textarea {
+    border-style: none;
+    width: 100%;
+    box-sizing: border-box;
+    border: 3px #ccc solid;
+    -webkit-appearance: none;
+}
+
+.comment-respond input[type="submit"] {
+    padding: 5px 0;
+    width: 200px;
+    background-color: #f78aa9;
+    margin: 10px 0 0 0;
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #fff;
+    -webkit-appearance: none;
+    border: none;
+}
+
+.comments-title {
+    font-size: 1.8rem;
+    width: 100%;
+    text-indent: 1rem;
+    padding: 5px 0;
+    border-top: 3px solid #f78aa9;
+    border-bottom: 3px solid #f78aa9;
+}
+
+#reply-title {
+    display: none;
+}
+
+.reply a {
+    color: #444;
+}
+
+.comment-list {
+    padding: 2% 0;
+    box-sizing: border-box;
+    width: 100%;
+}
+
+.comment-list li {
+    color: #444;
+    padding: 2%;
+    border-bottom: 1px solid #eee;
+}
+
+
+.comment-list li:last-child {
+    border-bottom: 1px dotted #444;
+}
+
+.comment-metadata p,
+.comment-meta p,
+.comment-meta a {
+    font-size: 1.4rem;
+    color: #444;
+}
+
+.comment-meta p,
+.comment-meta a {
+    display: inline-block;
+    padding: 4px;
+    font-size: 1rem;
+}
+.comment-form-author ,
+.comment-form-email ,
+.comment-form-url {
+    font-size: 1.2rem;
+}
+.comment-form-author input,
+.comment-form-email input,
+.comment-form-url input {
+    border: 2px solid #eee;
+    display: block;
+    -webkit-appearance: none;
+}
+
+
+@media screen and (max-width:768px){
+
+    /* blog */
+    li.blog_container img {
+        width: 30%;
+        margin: 0 3%;
+    }
+
+    li.blog_container div {
+        width: 64%;
+    }
+
+    li.blog_container div h2 {
+        padding-top: 5px;
+        font-size: 1.8rem;
+    }
+
+    li.blog_container div span. {
+        font-size: 1rem;
+        padding: 2px 5px;
+        color: #fff;
+        margin: 3px 10px 3px 0;
+    }
+
+    span.post_date {
+        font-size: 1rem;
+        margin: 0;
+    }
+
+    li.blog_container div p.excerpt {
+        padding-top: 3px;
+        font-size: 1.4rem;
+        line-height: 1.8rem;
+        letter-spacing: 0px;
+    }
+
+    #container #content img {
+        width: 100%;
+        height: auto;
+    }
+
+}
+
+
+@media screen and (max-width: 480px){
+
+    li.blog_container div h2 {
+        padding-top: 5px;
+        font-size: 1.6rem;
+    }
+
+/*single-page.php
+------------------------------------------------------------*/
+
+    #container h1{
+        padding-top: 0px;
+        padding-left: 2%;
+        padding-right: 2%;
+        padding-bottom: 2%;
+        line-height: 2rem;
+        font-size: 1.8rem;
+    }
+    span.category {
+        margin: 10px 1% 5px 1%;
+        font-size: 1rem;
+    }
+    #container #content {
+        padding-top: 0;
+    }
+    #container #content p{
+        font-size: 11pt;
+        margin: 2rem 0;
+    }
+
+    #container #content img {
+        width: 100%;
+        height: auto;
+    }
+
+
+    /* Form Editer Default Style */
+
+    #container #content h2 {
+        padding: 10px 14px;
+        margin: 20px 0;
+        text-indent: 0;
+    }
+    #container #content a {
+        font-weight: bold;
+        text-decoration: underline;
+    }
+
+
+}
+
+
+/* common 共通CSS */
+
+/*Default set
+------------------------------------------------------------*/
+html {
+    font-size: 62.5%;
+    /* font-size = 10px */
+}
+body {
+    font-size: 10px;
+    font-size: 1.0rem;
+    background-color: #eee;
+    margin: 0;
+    padding: 0;
+    font-family:  "メイリオ", "Meiryo","ヒラギノ角ゴ Pro", "Hiragino Kaku Gothic Pro", sans-serif;
+    color: #444;
+}
+
+h1 {
+    font-size: 3rem;
+    font-family: "メイリオ", sans-serif;
+    margin: 0;
+    padding: 0;
+    color: #444;
+}
+
+h2.blog_title {
+    font-size: 2.5rem;
+    font-family: "メイリオ", sans-serif;
+    margin: 0;
+    padding: 0;
+    color: #444;
+    line-height: 3.5rem;
+}
+
+h3 {
+    font-size: 2rem;
+    font-family: "メイリオ", sans-serif;
+    margin: 0;
+    padding: 0;
+    color: #444;
+}
+
+p {
+    font-size: 1.5rem;
+    line-height: 2.2rem;
+    color: #444;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    width: 100%;
+    height: 65px;
+    background-color: #fff;
+    overflow: hidden;
+    position: fixed;
+    top: 0;
+    z-index:99;
+    border-bottom: 10px solid #f78aa9;
+}
+
+header img {
+    display: block;
+    position: absolute;
+    top: 10px;
+    left: 5%;
+    width: 220px;
+    height: auto;
+}
+
+.wrap {
+    max-width: 1200px;
+    width: 100%;
+    margin: 0% auto 2% auto;
+    position: relative;
+    overflow: hidden;
+}
+
+article {
+    float: left;
+    width: 100%;
+    height: auto;
+    padding: 0% 4% 4% 4%;
+    box-sizing: border-box;
+    background-color: #fff;
+    overflow: hidden;
+    position: relative;
+   // border: 10px #efef solid;
+    box-shadow: 0 0 20px rgba(0,0,0,.1);
+}
+
+aside {
+    float: right;
+    width: 28%;
+    margin-left: 2%;
+    height: auto;
+    box-sizing: border-box;
+    background-color: #fff;
+    overflow: hidden;
+    position: relative;
+    box-shadow: 0 0 20px rgba(0,0,0,.1);
+}
+
+.link_btn {
+    border: 1px solid #15aeec;
+    background-color: #49c0f0;
+    background-image: -webkit-linear-gradient(top, #49c0f0, #2cafe3);
+    background-image: linear-gradient(to bottom, #49c0f0, #2cafe3);
+    border-radius: 4px;
+    color: #fff;
+    -webkit-transition: none;
+    transition: none;
+    text-shadow: 0 1px 1px rgba(0, 0, 0, .3);
+    display: block;
+    width: 300px;
+    text-align: center;
+    padding: 10px 0;
+    margin: 20px auto;
+    font-weight: bold;
+    font-size: 17px;
+    box-shadow: 0 3px 0 #039;
+    line-height: 1.3;
+}
+
+.btn_center{
+  position: relative;
+  text-align: center;
+  max-width: 100%;
+  text-align: center;
+}
+
+.blinking {
+  -webkit-animation: 1s ease-in-out infinite blink;
+          animation: 1s ease-in-out infinite blink;
+  color: red;
+}
+
+@-webkit-keyframes blink {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes blink {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+
+footer {
+    clear: both;
+    background-color :#000;
+    width: 100%;
+    height: 80px;
+    text-align: center;
+}
+
+footer p {
+    color: #fff;
+    font-size: 1.5rem;
+    padding: 10px;
+}
+
+footer p a {
+
+}
+
+footer span.copylight {
+    color: #fff;
+    font-size: 1.3rem;
+    padding: 10px;
+}
+
+.a-btnsub73, .a-option73, .animate73 {
+  -webkit-animation-timing-function: ease-in;
+  animation-timing-function: ease-in;
+  -webkit-animation-iteration-count: infinite;
+  animation-iteration-count: infinite;
+}
+
+@-webkit-keyframes animate73 {
+  0% {
+    -webkit-transform: scale(0.92);
+  }
+  40% {
+    -webkit-transform: scale(0.97);
+  }
+  60% {
+    -webkit-transform: scale(0.86);
+  }
+  80% {
+    -webkit-transform: scale(1);
+  }
+  100% {
+    -webkit-transform: scale(0.92);
+  }
+}
+
+@keyframes animate73 {
+  0% {
+    -webkit-transform: scale(0.92);
+    transform: scale(0.92);
+  }
+  40% {
+    -webkit-transform: scale(0.97);
+    transform: scale(0.97);
+  }
+  60% {
+    -webkit-transform: scale(0.86);
+    transform: scale(0.86);
+  }
+  80% {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+  }
+  100% {
+    -webkit-transform: scale(0.92);
+    transform: scale(0.92);
+  }
+}
+
+.animate73 {
+  -ms-animation-name: animate73;
+  -webkit-animation-name: animate73;
+  -moz-animation-name: animate73;
+  -o-animation-name: animate73;
+}
+
+/*cust0m*/
+.a-btn73 {
+  padding-left: 0% !important;
+}
+
+.a-option73 {
+  top: 0% !important;
+}
+
+.a-option73 {
+  width: 20% !important;
+}
+
+.a-btn73 {
+  max-width: 100% !important;
+}
+
+.a-btnsub73,
+.a-option73,
+.animate73 {
+  animation-duration: 1.3s !important;
+  -webkit-animation-duration: 1.3s;
+  -ms-animation-duration: 1.3s;
+  -moz-animation-duration: 1.3s !important;
+}
+
+
+/*Parts set
+------------------------------------------------------------*/
+
+/* aside*/
+
+aside h3 {
+    background-color: #f78aa9;
+    width: 100%;
+    font-size: 1.7rem;
+    font-weight: bold;
+    text-align: left;
+    text-indent: 1em;
+    padding: 10px 0;
+    color: #fff;
+}
+
+aside ul {
+    width: 94%;
+    margin: 0 auto;
+}
+
+aside ul .recomend_container {
+    width: 100%;
+    border-bottom: 1px dotted #444;
+    display: table;
+}
+
+aside ul .recomend_container:last-child {
+    border-bottom: none;
+}
+
+aside ul .recomend_container img {
+    float: left;
+    width: 25%;
+    height: auto;
+    margin: 5%;
+}
+
+aside ul .recomend_container div {
+    float: left;
+    width: 60%;
+    margin: 5% 0;
+}
+
+aside ul .recomend_container div h4 {
+    font-size: 1.5rem;
+    color: #444;
+}
+
+aside ul .recomend_container div span.category {
+    display: inline-block;
+    font-size: 1rem;
+    color: #888;
+    text-align: center;
+    padding: 2px 4px;
+    margin: 5px 2px 5px 0;
+    border-radius: 3px;
+    color: #fff;
+    background-color: #f67e69;
+}
+
+aside ul .recomend_container div span.post_date {
+    display: inline-block;
+    font-size: 1rem;
+    text-align: left;
+    padding: 2px 0;
+    margin: 5px 10px 5px 0;
+    border-radius: 3px;
+    color: #444;
+}
+
+
+aside ul .recomend_container div p {
+    padding: 2px;
+    text-align: left;
+    width: 100%;
+    color: #444;
+    font-size: 1.2rem;
+    line-height: 1.2em;
+}
+
+/* SNS share button */
+
+#share {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    padding-bottom: 40px;
+}
+
+#share a {
+    display: block;
+    height: 30px;
+    width: 60px;
+    background-color: #888;
+    margin: 5px;
+    border-radius: 3px;
+    text-align: center;
+    line-height: 2em;
+}
+
+.button {
+    margin: 6px 0;
+    padding: 5px 0;
+    background-color: #f67e69;
+    border-radius: 5px;
+    text-align: center;
+    display: block;
+    color: #fff;
+    width: 120px;
+    font-size: 1.6rem;
+    letter-spacing: 1px;
+}
+
+.button:hover {
+    background-color: #fdd0c8;
+}
+
+#topBtn {
+    display: block;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    background-color: #f67e69;
+    box-shadow: 0 0 5px rgba(0,0,0,.4);
+    position: fixed;
+    bottom : 30px;
+    right: 30px;
+}
+
+
+#topBtn span {
+    width: 20px;
+    height: 20px;
+    border-top: 3px solid #fff;
+    border-right: 3px solid #fff;
+    transform: rotate(-45deg);
+    position: absolute;
+    right: 20px;
+    top: 22px;
+}
+
+.marker-animation.active{
+    background-position: -100% .5em;
+}
+.marker-animation {
+    background-image: -webkit-linear-gradient(left, transparent 50%, rgb(255,250,153) 50%);
+    background-image: -moz-linear-gradient(left, transparent 50%, rgb(255,250,153) 50%);
+    background-image: -ms-linear-gradient(left, transparent 50%, rgb(255,250,153) 50%);
+    background-image: -o-linear-gradient(left, transparent 50%, rgb(255,250,153) 50%);
+    background-image: linear-gradient(left, transparent 50%, rgb(255,250,153) 50%);
+    background-repeat: repeat-x;
+    background-size: 200% .8em;
+    background-position: 0 .5em;
+    transition: all 2s ease;
+    font-weight: bold;
+}
+.m-blue {
+    background-image: -webkit-linear-gradient(left, transparent 50%, rgba(107, 182, 255, 0.24) 50%);
+    background-image: -moz-linear-gradient(left, transparent 50%, rgba(107, 182, 255, 0.24) 50%);
+    background-image: -ms-linear-gradient(left, transparent 50%, rgba(107, 182, 255, 0.24) 50%);
+    background-image: -o-linear-gradient(left, transparent 50%, rgba(107, 182, 255, 0.24) 50%);
+    background-image: linear-gradient(left, transparent 50%, rgba(107, 182, 255, 0.24) 50%);
+    background-repeat: repeat-x;
+    background-size: 200% .8em;
+    background-position: 0 .5em;
+    transition: all 2s ease;
+    font-weight: bold;
+}
+.m-green {
+    background-image: -webkit-linear-gradient(left, transparent 50%, rgba(151, 232, 154, 0.69) 50%);
+    background-image: -moz-linear-gradient(left, transparent 50%, rgba(151, 232, 154, 0.69) 50%);
+    background-image: -ms-linear-gradient(left, transparent 50%, rgba(151, 232, 154, 0.69) 50%);
+    background-image: -o-linear-gradient(left, transparent 50%, rgba(151, 232, 154, 0.69) 50%);
+    background-image: linear-gradient(left, transparent 50%, rgba(151, 232, 154, 0.69) 50%);
+    background-repeat: repeat-x;
+    background-size: 200% .8em;
+    background-position: 0 .5em;
+    transition: all 2s ease;
+    font-weight: bold;
+}
+.m-red {
+    background-image: -webkit-linear-gradient(left, transparent 50%, rgba(255, 88, 88, 0.2) 50%);
+    background-image: -moz-linear-gradient(left, transparent 50%, rgba(255, 88, 88, 0.2) 50%);
+    background-image: -ms-linear-gradient(left, transparent 50%, rgba(255, 88, 88, 0.2) 50%);
+    background-image: -o-linear-gradient(left, transparent 50%, rgba(255, 88, 88, 0.2) 50%);
+    background-image: linear-gradient(left, transparent 50%, rgba(255, 88, 88, 0.2) 50%);
+    background-repeat: repeat-x;
+    background-size: 200% .8em;
+    background-position: 0 .5em;
+    transition: all 2s ease;
+    font-weight: bold;
+}
+
+@media screen and (max-width:768px){
+
+/*Default set
+------------------------------------------------------------*/
+    .wrap {
+        width: 96%;
+        margin: 18% auto 6% auto;
+        position: relative;
+        overflow: hidden;
+    }
+    article {
+        float: none;
+        width: 100%;
+        margin-bottom: 10%;
+        padding: 3%;
+        border: none;
+    }
+
+    aside {
+        float: none;
+        width: 100%;
+        margin: 0 auto;
+        border-bottom: 10px solid #f78aa9;
+
+    }
+
+    footer { height: 150px; }
+
+    footer p {
+        display: block;
+        padding-top: 40px;
+    }
+
+    .button {
+        width: 70%;
+        margin: 3% auto;
+    }
+
+    h2.blog_title {
+        line-height: 3rem;
+    }
+
+/*Parts set
+------------------------------------------------------------*/
+    aside ul {
+        width: calc(100% - 4px);
+        -moz-width: calc(100% - 4px);
+        -webkit-width: calc(100% - 4px);
+        margin: 0 auto;
+    }
+
+    aside ul .recomend_container {
+        width: 49.5%;
+        float: left;
+    }
+    aside ul .recomend_container:nth-child(even){
+        border-left: 1px dotted #444;
+    }
+    aside ul .recomend_container:last-child {
+        border-bottom: 1px dotted #444;
+    }
+}
+
+
+@media screen and (max-width: 480px){
+
+/*Default set
+------------------------------------------------------------*/
+    .wrap {
+        width: 100%;
+        margin: 0% auto 6% auto;
+        position: relative;
+        overflow: hidden;
+    }
+
+    h1 {
+        font-size: 2.5rem;
+    }
+    h1 a img {
+        width: 150px;
+        text-align: center;
+        right: 0;
+        left: 0;
+        margin: 0 auto;
+    }
+    h2 {
+        font-size: 1.6rem;
+    }
+
+    h2.blog_title {
+        line-height: 1.6rem;
+        letter-spacing: 1px;
+    }
+
+    p {
+        line-height: 1.8rem;
+    }
+
+    header {
+        position: absolute;
+        height: 45px;
+            border-bottom: 5px solid #f78aa9;
+    }
+
+
+    footer span.copylight {
+        color: #fff;
+        font-size: 1rem;
+        padding: 1%;
+    }
+
+/*Parts set
+------------------------------------------------------------*/
+
+    article {
+        float: none;
+        width: 100%;
+        margin-bottom: 10%;
+        padding: 6% 1%;
+    }
+    html {
+        font-size: 70%;
+        /* font-size = 10px */
+    }
+
+    aside ul {
+        width: 100%;
+    }
+
+    aside ul .recomend_container {
+        width: 100%;
+        float: none;
+    }
+    aside ul .recomend_container:nth-child(even){
+        border-left: none;
+    }
+    aside ul .recomend_container:last-child {
+        border-bottom: none;
+    }
+
+    aside ul .recomend_container div span.post_date {
+        margin: 0;
+    }
+}
+
+/*
+customized animate.css
+*/
+
+.anime1 {
+  animation: shakeX;
+  -webkit-animation: shakeX;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+}
+.anime2 {
+  animation: shakeY;
+  -webkit-animation: shakeY;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+}
+.anime3 {
+  animation: headShake;
+  -webkit-animation: headShake;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+}
+.anime4 {
+  animation: heartBeat;
+  -webkit-animation: heartBeat;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+
+}
+.anime5 {
+  animation: bounce;
+  -webkit-animation: bounce;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+}
+.anime6 {
+  animation: rubberBand;
+  -webkit-animation: rubberBand;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+}
+.anime7 {
+  animation: bounceIn;
+  -webkit-animation: bounceIn;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+}
+.anime8 {
+  animation: jello;
+  -webkit-animation: jello;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+}
+
+p,span,a{
+font-size: 16px !important;
+line-height:1.6em !important;
+}
+div#recommend {
+display: none;
+}
+.deka{
+font-weight: bold;
+font-size: 20px !important;
+}
+.kuro_kiiroline60{
+font-size: 16px !important;
+background: linear-gradient(transparent 60%, #ffff8e 60%);
+font-weight: bold;
+}
+.kuro_kiiroline{
+font-size: 16px !important;
+background:#ffff00;
+font-weight: bold;
+}
+.dekakuro_kiiroline{
+font-size: 20px !important;
+background:#ffff00;
+font-weight: bold;
+}
+.red{
+font-size: 16px !important;
+color:#ff0000;
+font-weight: bold;
+}
+.dekared{
+font-size: 20px !important;
+color:#ff0000;
+font-weight: bold;
+}
+.red_yellowline{
+color:#ff0000;
+font-weight: bold;
+font-size: 16px !important;
+line-height: 2rem;
+background:#ffff00;
+}
+.dekared_yellowline{
+color:#ff0000;
+font-weight: bold;
+font-size: 20px !important;
+line-height: 2rem;
+background:#ffff00;
+}
+.kuro_pinkline{
+background: linear-gradient(transparent 60%, #ffcedb 60%);
+font-weight: bold;
+}
+.marker-animation{
+font-size: 20px !important;
+}
+.dekapink{
+font-size: 20px !important;
+color:#ff69b4;
+font-weight: bold;
+}
+.pink{
+font-size: 16px !important;
+color:#ff69b4;
+font-weight: bold;
+}
+h2{
+  padding: .25em 0 .5em .75em;
+  border-left: 6px solid #c71585;
+  border-bottom: 1px solid #db7093;
+}
+.tyoipink{
+font-size: 18px !important;
+color:#c71585;
+font-weight: bold;
+}
+.fashionable-box3{
+  margin: 1em 0;
+  padding: 1em;
+  box-shadow: 0 0 3px 2px #ffb6c1, 0 0 3px 2px #ffb6c1 inset;
+  border-radius: 10px;
+  background: #fffafa;
+}
+
+.fashionable-box3 p{
+  margin: 0;
+  padding: 0;
+}
+.kiiro{
+font-size: 16px !important;
+color:#ff8c00;
+font-weight: bold;
+}
+.normal-box1{
+  margin: 1em 0;
+  padding: 1em;
+  background-color: #faf0e6;
+}
+.blink {
+  -webkit-animation: blink 1s ease infinite;
+  animation: blink 1s ease infinite;
+font-size: 20px !important;
+}
+@-webkit-keyframes blink {
+  0% {opacity: 0;}
+  100% {opacity: 1;}
+}
+@keyframes blink {
+  0% {opacity: 0;}
+  100% {opacity: 1;}
+}
+h1{
+font-size: 20px !important;
+}
+.pink2{
+font-size: 20px !important;
+color:#ff69b4;
+font-weight: bold;
+}
+.red2{
+font-size: 20px !important;
+color:#ff0000;
+font-weight: bold;
+}
+h3 {
+  padding-bottom: .5em;
+  border-bottom: 1px solid #db7093;
+}
+header{
+display: none!important;
+}
+.wrap{
+margin-top: 0px;
+}
+h1{
+border: none !important;
+}
+.header-img{
+display: block;
+width: 100% !important;
+}
+#main_content{
+padding-top:0px;
+}
+.dekausupink{
+font-size: 20px !important;
+color:#ffb6c1;
+font-weight: bold;
+}
+.buraito{
+font-size: 16px !important;
+color:#c71585;
+font-weight: bold;
+}
+.dekaao{
+font-size: 20px !important;
+color:#0000ff;
+font-weight: bold;
+}
+.kakomi-box3 {
+ margin: 2em auto;
+ padding: 1em;
+ width: 90%;
+ border: 3px solid #808080; /* 枠線 */
+ background-color: #fff0f5; /* 背景色 */
+ box-shadow: 1px 1px 2px #ccc;
+}
+.box29 {
+    margin: 2em 0;
+    background: #dcefff;
+}
+.box29 .box-title {
+    font-size: 1.2em;
+    background: #5fb3f5;
+    padding: 4px;
+    text-align: center;
+    color: #FFF;
+    font-weight: bold;
+    letter-spacing: 0.05em;
+}
+.box8 {
+    padding: 0.5em 1em;
+    margin: 2em 0;
+    color: #232323;
+    background: #fff8e8;
+    border-left: solid 10px #ffc06e;
+}
+.navy{
+font-size: 16px !important;
+color:#000080;
+font-weight: bold;
+}
+.blink {
+  -webkit-animation: blink 1s ease infinite;
+  animation: blink 1s ease infinite;
+}
+@-webkit-keyframes blink {
+  0% {opacity: 0;}
+  100% {opacity: 1;}
+}
+@keyframes blink {
+  0% {opacity: 0;}
+  100% {opacity: 1;}
+}
+</style> <noscript>&lt;iframe src="https://www.googletagmanager.com/ns.html?id=GTM-56QHZ5Z"
+ height="0" width="0" style="display:none;visibility:hidden"&gt;&lt;/iframe&gt;</noscript>
+<meta name="robots" content="noindex,nofollow"> <script type="text/javascript">var _vis_opt_account_id = 314357;
+var _vis_opt_protocol = (('https:' == document.location.protocol) ? 'https://' : 'http://');
+document.write('<s' + 'cript src="' + _vis_opt_protocol + 'dev.visualwebsiteoptimizer.com/deploy/js_visitor_settings.php?v=1&a='+_vis_opt_account_id+'&url='+encodeURIComponent(document.URL)+'&random='+Math.random()+'" type="text/javascript">' + '<\/s' + 'cript>');</script>
+<script src="https://dev.visualwebsiteoptimizer.com/deploy/js_visitor_settings.php?v=1&amp;a=314357&amp;url=https%3A%2F%2Fnavivi.site%2Farchives%2F89682&amp;random=0.03482416970655322" type="text/javascript">
+</script> <script type="text/javascript">if(typeof(_vis_opt_settings_loaded) == "boolean") { document.write('<s' + 'cript src="' + _vis_opt_protocol + 'd5phz18u4wuww.cloudfront.net/vis_opt.js" type="text/javascript">' + '<\/s' + 'cript>'); }</script> <script type="text/javascript">if(typeof(_vis_opt_settings_loaded) == "boolean" && typeof(_vis_opt_top_initialize) == "function"){ _vis_opt_top_initialize();
+vwo_$(document).ready(function() { _vis_opt_bottom_initialize(); }); }</script> <script data-cfasync="false" data-pagespeed-no-defer="">//
+	var gtm4wp_datalayer_name = "dataLayer";
+	var dataLayer = dataLayer || [];
+//</script> <link rel="dns-prefetch" href="//s.w.org">
+<link rel="alternate" type="application/rss+xml" title="Beauty News » 「え、これが私！？」年齢肌ケアには絶対コレ！脱・おば肌目指す!?神コスメがスゴイ！ のコメントのフィード" href="https://navivi.site/archives/89682/feed"> 
+<!-- <script>if (document.location.protocol != "https:") {
+    document.location = document.URL.replace(/^http:/i, "https:");
+}</script>  -->
+<link rel="https://api.w.org/" href="https://navivi.site/wp-json/">
+<link rel="alternate" type="application/json" href="https://navivi.site/wp-json/wp/v2/posts/89682">
+<link rel="EditURI" type="application/rsd+xml" title="RSD" href="https://navivi.site/xmlrpc.php?rsd">
+<meta name="generator" content="WordPress 5.6">
+<link rel="canonical" href="https://navivi.site/archives/89682">
+<link rel="shortlink" href="https://navivi.site/?p=89682">
+<link rel="alternate" type="application/json+oembed" href="https://navivi.site/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fnavivi.site%2Farchives%2F89682">
+<link rel="alternate" type="text/xml+oembed" href="https://navivi.site/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fnavivi.site%2Farchives%2F89682&amp;format=xml"> <script data-cfasync="false" data-pagespeed-no-defer="">//
+	var dataLayer_content = {"pagePostType":"post","pagePostType2":"single-post","pageCategory":["%e6%9c%aa%e5%88%86%e9%a1%9e"],"pagePostAuthor":"yosyyosy"};
+	dataLayer.push( dataLayer_content );//</script> <script data-cfasync="false">//
+(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'//www.googletagmanager.com/gtm.'+'js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-NTHNKRG');//</script> <div class="wrap">
+<article id="main_content"> <img class="header-img" src="https://navivi.site/wp-content/uploads/2020/10/へっだー-1.jpg">
+<div id="container">
+<h1>
+<center>
+<span class="red2">「え、これが私！？」</span>
+<br>年齢肌ケアには絶対コレ！<br>
+<span class="dekapink">脱・おば肌目指す!?</span>神コスメがスゴイ！</center>
+</h1>
+<div id="content">
+<p style="text-align: right;margin-top: 0px; margin-bottom: 0px;">
+<span style="color: #c1c1c1; font-size:10px!important;">PR株式会社アイム</span>
+</p>
+<div id="pt" rate="100" style="height: 0px;">
+</div>
+<p style="margin-top:0px;&quot;">
+<img src="https://navivi.site/wp-content/uploads/2020/12/sinfv.jpg">
+</p>
+<p>いつまでたっても<span class="pink">ぷるんとツヤ肌</span>でいたい!!</p>
+<p style="text-align:center;&quot;">
+<span class="marker-animation">製薬会社開発のエイジングケアで<br> あなたの”願い”の実現目指しませんか。</span>
+</p>
+<p>
+</p>
+<p>
+<span class="navy">
+<br> ・化粧しても隠れない頑固なしわ<span style="color: #c1c1c1; font-size:10px!important;">※</span>
+<br> ・顔面小じわ<span style="color: #c1c1c1; font-size:10px!important;">※</span>くっきり<br> ・口元に浮かぶほうれい線…</span>
+</p>
+<p>そんなあなたにオススメの<br> <span class="marker-animation m-red">年齢肌対策コスメ✨</span>
+</p>
+<p>SNSではすでに話題になっていて<br> <img src="https://navivi.site/wp-content/uploads/2020/12/6人衆.png">
+<br> <span class="kuro_pinkline">「たったの2ステップでケア完了！？」<br> 「コスパ良すぎ…」</span>
+<br> と賞賛の声が相次いでいるんです!!</p>
+<p>そんな<b>エイジングケアの新定番コスメ</b>が…</p>
+<p>
+<img src="https://navivi.site/wp-content/uploads/2020/12/商品登場.jpg">
+<br>
+</p>
+<center>
+<span class="dekaao">
+<u>【ブライトエイジ】</u>
+</span>
+</center>
+<p>
+</p>
+<p>大手製薬会社が<b>本気で開発した神コスメ！</b>
+</p>
+<p>口コミでもかなり話題になっていました！</p>
+<div class="kakomi-box3"> <img src="https://navivi.site/wp-content/uploads/2020/12/口コミ変える.png">
+<br> 衝撃的なコスパの良さです。<br> しっかり保湿対策もしてくれるセットだから<span class="red">これからの季節に頼れるアイテム！</span>
+<br> <span class="pink">忙しい時でもしっかりケア</span>できちゃうブライトエイジは本当に私にとって救世主です!!<br> <b>50代/主婦</b>
+</div>
+<div class="kakomi-box3"> <img src="https://navivi.site/wp-content/uploads/2020/12/1.png">
+<br> 信じられません…！<br> <span class="red">すっぴんでも自信がもてちゃうくらいのツヤ感に感動…</span>
+<br> ほんと、<span class="pink">ケアはブライトエイジだけで十分</span>ですね。<br> <b>30代/パート</b>
+</div>
+<div class="kakomi-box3"> <img src="https://navivi.site/wp-content/uploads/2020/12/くちこみさん１.jpg">
+<br> 最近ママ友の間で話題になってる神コスメ！<br> <span class="red">気になって使ってみたら想像以上…！</span>
+<br> さすが製薬会社の本気…！って感じの使用感に大満足です✨<br> <b>40代/主婦</b>
+</div>
+<p>そんなすんごい神コスメ…</p>
+<p style="text-align:center;&quot;">
+<span class="dekared">↓↓↓</span>
+</p>
+<p>
+</p>
+<p style="margin-top:-1rem;&quot;">
+<img src="https://img.gifmagazine.net/gifmagazine/images/4617794/original.gif">
+</p>
+<p style="text-align:center;&quot;">
+<span class="marker-animation m-red">「ハリツヤすご！！」</span>
+</p>
+<p>
+</p>
+<p>
+<img src="https://navivi.site/wp-content/uploads/2020/12/ツヤ美肌.jpg">
+</p>
+<p>
+<b>悩みが全部嘘みたい…!!</b>
+<br> <a href="https://navivi.site/archives/91684" onclick="mouseClick(this.id)" id="0">
+<img class="anime1" src="https://navivi.site/wp-content/uploads/2020/12/ｃた１.png">
+</a>
+</p>
+<h2>実力が桁違い！<br> 芸能人も虜にするブライトエイジがスゴすぎた！</h2>
+<p>ブライトエイジは、あのロキソニンSで知られる<span class="kuro_kiiroline">「第一三共ヘルスケア」</span>が本気で開発した神コスメ！</p>
+<p>
+<img src="https://navivi.site/wp-content/uploads/2020/12/えんどうさん.jpg">
+</p>
+<p>その噂は芸能界にも知れ渡っていて、</p>
+<div class="box29">
+<div class="box-title"> ◆公式アンバサダー　本上まなみさん</div>
+<p>
+<img src="https://navivi.site/wp-content/uploads/2020/12/小さめまなみさん.jpg">
+<br> ブライトエイジは本当にシンプルなケアなので、<span class="pink">忙しい方でも使い続けられると思います。</span>
+<br> 欠かせない存在ですね。</p>
+</div>
+<div class="box29">
+<div class="box-title"> ◆元おにゃんこクラブ　渡辺美奈代さん</div>
+<p>
+<img src="https://navivi.site/wp-content/uploads/2020/12/小さめ美奈代.jpg">
+</p>
+</div>
+<p>その人気ぶりはとどまることを知らず<span class="kuro_kiiroline60">発売からわずか3年で累計販売個数500万個</span>を突破するほど！<br> <img src="https://navivi.site/wp-content/uploads/2020/11/５００-1.jpg">
+<br> さすが、製薬会社開発なだけあって、とんでもない人気ぶり…</p>
+<h2>脱・おば肌卒業！？<br> ブライトエイジのココがスゴイ！</h2>
+<p>ブライトエイジでエイジングケアができちゃう理由は製薬会社が独自で開発した<span class="tyoipink">トラネキサム酸。</span>
+</p>
+<p>トラネキサム酸は<span class="kuro_pinkline">「薬用美白有効成分」</span>で知られていて、ブライトエイジはしっかりとした<b>医薬部外品！</b>
+</p>
+<p>
+<img src="https://navivi.site/wp-content/uploads/2020/12/医薬部なおした.png">
+</p>
+<p>この美白有効成分トラネキサム酸が<span class="red">年齢肌の根本原因にしっかりアプローチ！！</span>
+<br> <img src="https://navivi.site/wp-content/uploads/2020/12/LWZ8tTDaoxItAEDie5nr1607474243-1607474331.gif">
+</p>
+<p>その他にもブライトエイジならではの特徴があって、簡単にまとめました！<br> <img src="https://navivi.site/wp-content/uploads/2020/12/特徴なおしました.png">
+</p>
+<p>とことんこだわった成分と製法こそが<span class="pink">ブライトエイジで年齢肌ケア</span>ができちゃう秘訣だったんです！</p>
+<h2>実際に使ってみました♪</h2>
+<p>
+<img src="https://navivi.site/wp-content/uploads/2020/12/商品新.png">
+<br> 注文してから3日ほどで到着!<br> <span class="pink">パッケージもおしゃれでテンション上がりました！</span>
+</p>
+<p>ブライトエイジのセット品は</p>
+<div class="box8"> <b>・化粧水<br> ・乳液状美容液</b>
+</div>
+<p>たったこれだけで<span class="red">全部完了</span>しちゃうんです！<br> <img src="https://navivi.site/wp-content/uploads/2020/11/kannryou.png">
+</p>
+<p>化粧水はなんだか<b>すーっとしみこんでいく感じ♡</b>
+<br> <img src="https://img.gifmagazine.net/gifmagazine/images/4564035/original.gif">
+<br> お肌の奥まで浸透していく感じがたまりません…！</p>
+<p>
+<img src="https://img.gifmagazine.net/gifmagazine/images/4564038/original.gif">
+<br> <span class="pink">お次に乳液状美容液！</span>
+<br> <b>こっくりとしたテクスチャ</b>でべたべたしないのも使いやすい!!</p>
+<p>
+<img src="https://img.gifmagazine.net/gifmagazine/images/4617815/original.gif">
+</p>
+<p>ちなみに、<span class="pink">これすっぴん…♡</span>
+</p>
+<p>旦那にも<span class="kuro_pinkline">「隠れてエステ行った！？」</span>
+<br> と疑われちゃうほどの<span class="marker-animation">つやっぷり</span>に大満足です♡</p>
+<h2>ブライトエイジ、お得に購入するなら今がチャンス！</h2>
+<p>製薬会社が開発した年齢肌ケアなんて絶対お高い。。。<br> そう思っている方に<span class="dekakuro_kiiroline">朗報</span>ですっ！！</p>
+<p style="text-align:center;&quot;">
+<span class="dekaao">期間限定特別キャンペーン</span>
+<br> <span class="kuro_pinkline">化粧水、乳液状美容液、夜用クリームの豪華3点セット</span>
+<br> <span class="deka">19,000円<span style="color: #c1c1c1; font-size:10px!important;">（税抜）</span>
+<br> <span class="dekared">▼▼▼</span>
+<br> 定期コース初回限定2,980円<span style="color: #c1c1c1; font-size:10px!important;">(税抜）</span>
+</span>
+</p>
+<p>
+<a href="https://navivi.site/archives/91684" onclick="mouseClick(this.id)" id="1">
+<img class="anime7" src="https://navivi.site/wp-content/uploads/2020/11/新しい公式➀.png">
+</a>
+<br> <span style="color: #c1c1c1; font-size:10px!important;">※化粧水、乳液状美容液、夜用クリームの3点セットが期間限定</span>
+<br> <span class="deka">えっ！？16,020円分も安くなるの…⁉</span>
+</p>
+<p>そうなんです。<br> <span class="red">覚悟を決めた超お得特別キャンペーン実施中</span>なんです!!</p>
+<p>ちなみに、「〇回は絶対」といった<span class="kuro_kiiroline">購入回数の縛りもなし！</span>
+<br> <img src="https://navivi.site/wp-content/uploads/2020/12/ていきなし.png">
+</p>
+<p>そして満足いかなかったら<span class="kuro_kiiroline">30日以内なら全額返金OK!!</span>
+</p>
+<p>しかも、<span class="pink">期間限定で化粧水、乳液状美容液に夜用クリームもセットでさらにお得♡</span>
+</p>
+<p>
+<img src="https://navivi.site/wp-content/uploads/2020/12/ねているだけ.jpg">
+<br> <span class="kuro_kiiroline60">（ちなみに夜用クリームは6,000円相当の超代物！！）</span>
+</p>
+<p>こんな破格で始められるチャンス逃すのはもったいなさすぎる…!!<br> <a href="https://navivi.site/archives/91684" onclick="mouseClick(this.id)" id="2">
+<img class="anime1" src="https://navivi.site/wp-content/uploads/2020/11/CTAボタンの変更.jpg"> </a>
+<br> <a href="https://navivi.site/archives/91684" onclick="mouseClick(this.id)" id="3">
+</a>
+</p>
+<p style="text-align:center;&quot;">
+<a href="https://navivi.site/archives/91684" onclick="mouseClick(this.id)" id="4">
+<u>＞＞↑ブライトエイジでツヤ美肌♡↑＜＜</u>
+</a>
+</p>
+<p>
+<br> <span class="blink">
+<span class="red">2021年1月4日までの期間限定…!!</span>
+</span>
+</p>
+<p>かなりお得に始めることができるのでこのチャンスにぜひ!!オススメします♡</p>
+<p style="text-align:center;&quot;">
+<b>製薬会社が本気で開発した<span class="kuro_pinkline">エイジングケアコスメ<span style="color: #c1c1c1; font-size:10px!important;">※</span>✨</span>
+<br> 次に<span class="pink">キレイ</span>を手にするのは<br> あなたかもしれませんよ？？</b>
+</p>
+<p>
+<br> <a href="https://navivi.site/archives/91684" onclick="mouseClick(this.id)" id="5">
+<img class="anime7" src="https://navivi.site/wp-content/uploads/2020/11/新しい公式➀.png">
+</a>
+</p>
+<p>
+<a href="https://navivi.site/archives/91684" onclick="mouseClick(this.id)" id="6">
+</a>
+</p>
+<center>
+<a href="https://navivi.site/archives/91684" onclick="mouseClick(this.id)" id="7">
+<u>＞＞公式サイトはコチラ＜＜</u>
+</a>
+</center>
+<p>
+</p>
+<p>
+<span style="color: #c1c1c1; font-size:10px!important;">シミ：メラニンの生成による<br> 小じわ：乾燥による小じわ<br> 販売個数500万本突破：2020年6月3日時点でのシリーズ販売累計</span>
+</p>
+<p>
+<span style="color: #c1c1c1; font-size:10px!important;">※定期コースは、その都度ご注文いただかなくても、次回発送予定日の5日前までにキャンセルのお手続きをいただくまで定期的に商品をお届けするコースです。<br> ※初回は化粧水（ライト）、乳液状美容液・夜用クリームをご注文から1週間程度でお届けします。（2,980円（税抜））<br> ※2回目以降は化粧水（ライト）、乳液状美容液を次回発送から45日ごとにお届けします。（15％OFF、11,050円（税抜））<br> ※変更・キャンセルする場合は次回発送予定日の5日前までお電話またはWEBにてお手続きください。<br> ※ご使用後でも30日以内は全額返金対応します。（ただし返送料はお客様負担とさせていただき、お届けした全ての商品を返品いただく必要があります。）<br> ※ご購入は初回購入に限ります。お1人様1回限りとなります。<br> ※トライアルキットをご購入いただいた方はお申込みいただけません。</span>
+</p>
+<hr>
+<p>
+<a href="https://navivi.site/archives/38780" onclick="mouseClick(this.id)" id="8">
+<span style="font-size: 7px!important; color: #999999;">運営者情報</span>
+</a>
+<span style="font-size: 7px!important; color: #999999;">/</span>
+<a href="https://im-co.co.jp/company/" onclick="mouseClick(this.id)" id="9">
+<span style="font-size: 7px!important; color: #999999;">会社概要</span>
+</a>
+<span style="font-size: 7px!important; color: #999999;">/</span>
+<a href="https://brightage.jp/stc/campaign/lp/tokutei/tokutei.aspx" onclick="mouseClick(this.id)" id="10">
+<span style="font-size: 7px!important; color: #999999;">特商法・プライバシーポリシーについて</span>
+</a>
+</p>
+</div>
+</div>
+<div class="comments">
+<div id="comments" class="comments-area">
+</div>
+</div>
+<div id="pt" rate="100" style="height: 0px;">
+</div>
+<div id="recommend">
+<div align="center" style="margin:20px 0px 10px; padding: 10px; font-size: 16px; background-color: #3269AE; color: white;">人気のオススメ記事</div>
+<div style="width: 100%; border-collapse: separate; border-spacing: 10px 0;">
+<div class="article-43094" style="width: 30%; height: auto; display: table-cell;&gt;&lt;a href=" https:="" navivi.site="" archives="" 43094"="">
+<img style="width: 100%; height: auto;" src="https://navivi.site/wp-content/uploads/2019/09/BCB.jpg">
+</div>
+<div class="article-43094" style="font-size: 15px; display: table-cell; vertical-align: middle;">
+<a href="https://navivi.site/archives/43094" class="adlink" onclick="mouseClick(this.id)" id="11">旦那「隠れてエステ行ってない？」<br>黒ずみ毛穴で悩んでいた43歳主婦の私が<span class="tytle_led">毎日の習慣をちょっと変えるだけ</span>の<span class="tytle_kuro_yellowline">ドロッと毛穴の汚れを落とした方法</span>
+</a>
+</div>
+<hr>
+<div class="article-42578" style="width: 30%; height: auto; display: table-cell;&gt;&lt;a href=" https:="" navivi.site="" archives="" 42578"="">
+<img style="width: 100%; height: auto;" src="https://navivi.site/wp-content/uploads/2019/08/クレムドアン.jpg">
+</div>
+<div class="article-42578" style="font-size: 15px; display: table-cell; vertical-align: middle;">
+<a href="https://navivi.site/archives/42578" class="adlink" onclick="mouseClick(this.id)" id="12">「フォー！」美容師も絶賛！！住谷杏奈さんが本気で作ったクリームシャンプーがガチでうるつやになる！と爆売れ</a>
+</div>
+<hr>
+<div class="article-14650" style="width: 30%; height: auto; display: table-cell;&gt;&lt;a href=" https:="" navivi.site="" archives="" 14650"="">
+<img style="width: 100%; height: auto;" src="https://navivi.site/wp-content/uploads/2018/05/simai.jpeg">
+</div>
+<div class="article-14650" style="font-size: 15px; display: table-cell; vertical-align: middle;">
+<a href="https://navivi.site/archives/14650" class="adlink" onclick="mouseClick(this.id)" id="13">【45歳が3日で感動】ロキソニンSの会社がつくったエイジングケアを試したら、「お母さんですか？」から「お姉さんですか？」と聞かれるようになった驚き体験</a>
+</div>
+<hr>
+<div class="article-22859" style="width: 30%; height: auto; display: table-cell;&gt;&lt;a href=" https:="" navivi.site="" archives="" 22859"="">
+<img style="width: 100%; height: auto;" src="https://navivi.site/wp-content/uploads/2018/10/14-1.jpg">
+</div>
+<div class="article-22859" style="font-size: 15px; display: table-cell; vertical-align: middle;">
+<a href="https://navivi.site/archives/22859" class="adlink" onclick="mouseClick(this.id)" id="14">アルブチンの2倍の美白効果！10万本突破の「シミ対策」美容液が凄い！</a>
+</div>
+<hr>
+</div> <script async="" src="https://www.googletagmanager.com/gtag/js?id=UA-135640445-1">
+</script> <script>window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+
+        gtag('config', 'UA-135640445-1', { 'optimize_id': 'GTM-P7HNT6R'});</script> </div>
+</article>
+</div>
+<footer> <span class="copylight">Copyright©2020&nbsp;&nbsp;All&nbsp;Rights&nbsp;Reserved.</span>
+</footer> <script>$(function () {
+    var a = $("#topBtn");
+    a.hide();
+    $(window).scroll(function () {
+        if ($(this).scrollTop() > 500) {
+            a.fadeIn()
+        } else {
+            a.fadeOut()
+        }
+    });
+    a.click(function () {
+        $("body,html").animate({
+            scrollTop: 0
+        }, 500);
+        return false
+    });
+    $('a[href^="#"]').click(function () {
+        var c = 500;
+        var e = $(this).attr("href");
+        var b = $(e == "#" || e == "" ? "html" : e);
+        var d = b.offset().top;
+        $("html, body").animate({
+            scrollTop: d
+        }, c, "swing");
+        return false
+    })
+});
+
+var $SPwindow = $(window).width();
+if( $SPwindow < 480 ){
+    $('.excerpt').next('p').hide();
+}</script> <noscript>&lt;iframe src="https://www.googletagmanager.com/ns.html?id=GTM-NTHNKRG"
+height="0" width="0" style="display:none;visibility:hidden"&gt;&lt;/iframe&gt;</noscript> <script>elements = document.getElementsByClassName("commentmetadata");
+  for (var i = 0; i < elements.length; i++) {
+    elements[i].firstChild.innerHTML="";
+  }</script> <script type="text/javascript">scrollLocation = 0;
+  scrollPercent = 0;
+  x_pos = null;
+  y_pos = null;
+
+  post_id = '89682';
+  ad_title = document.title;
+  ad_url = window.location.href;
+
+  console.log(post_id);
+
+  user_ip = "222.112.243.14, 10.44.0.1"
+
+  startTime = new Date();
+  endTime = null;
+  timeTable = new Array();
+  scrollTable = new Array();
+  btn_urls = new Array();
+  btn_texts = new Array();
+
+  currentHeight = screen.height;
+
+  currentWidth = screen.width;
+
+  var body = document.body;
+    var html = document.documentElement;
+
+  var height = Math.max(
+    body.scrollHeight, html.scrollHeight,
+    body.offsetHeight, html.offsetHeight,
+    body.clientHeight, html.clientHeight,
+    window.innerHeight
+  );
+
+  maxHeight = currentHeight + height;
+  downHeight = height;
+
+  var buttons = document.getElementsByTagName("a");
+  for (var i =0; i< buttons.length; i++){
+    buttons[i].setAttribute("onclick", "mouseClick(this.id)");
+    buttons[i].id = i;
+    if (buttons[i].firstElementChild != null) {
+      if(buttons[i].firstElementChild.tagName == 'IMG'){
+        btn_urls[i] = buttons[i].firstElementChild.getAttribute('src');
+      }
+      else {
+        btn_texts[i] = buttons[i].innerText;
+      }
+    }
+    else {
+        btn_texts[i] = buttons[i].innerText;
+    }
+
+  };
+  console.log(btn_urls)
+
+  function mouseClick(clicked_btn){
+      x_pos = event.clientX;
+      y_pos = event.clientY;
+
+    navigator.sendBeacon(
+      "http://35.187.221.54:8080/api/v1/articles/new?id="+post_id+";title="+ad_title+";url="+ad_url+";maxpos="+(height+300)
+      );
+
+
+    for (var i =0; i< timeTable.length; i++)
+    {
+      navigator.sendBeacon("http://35.187.221.54:8080/api/v1/articles/"+post_id+"/scrolls/new?scroll_pos="+scrollTable[i]+";scroll_dur="+timeTable[i]);
+    };
+
+    navigator.sendBeacon(
+      "http://35.187.221.54:8080/api/v1/articles/"+post_id+"/clicks/new?click_x="+x_pos+";click_y="+y_pos+";btn_url="+btn_urls[clicked_btn]+";btn_text="+btn_texts[clicked_btn]+";view_ip="+user_ip
+      );
+
+  };
+
+  window.addEventListener('scroll', function () {
+
+    if(window.scrollY > scrollLocation) {
+      scrollLocation = window.scrollY;
+      if((scrollLocation +screen.height) > currentHeight) {
+        downHeight = window.scrollY;
+        endTime = new Date();
+        result = endTime - startTime;
+        startTime = endTime;
+          if(scrollLocation + screen.height > height) {
+                scrollTable.push(parseInt(100));
+            }
+            else{
+            scrollTable.push(parseInt((window.scrollY + screen.height)/height*100));
+            }
+          timeTable.push(result/1000);
+        currentHeight = currentHeight + screen.height;
+      }
+    }
+    else if(window.scrollY < scrollLocation){
+      scrollLocation = window.scrollY;
+      currentHeight = scrollLocation;
+      if((scrollLocation + screen.height) < downHeight) {
+        endTime = new Date();
+        result = endTime - startTime;
+        startTime = endTime;
+        downHeight = downHeight - screen.height;
+        scrollTable.push(parseInt((window.scrollY + screen.height)/height*100));
+        timeTable.push(result/1000);
+      }
+    }
+  });
+
+  window.addEventListener('unload', function(){
+
+    navigator.sendBeacon(
+      "http://35.187.221.54:8080/api/v1/articles/new?id="+post_id+";title="+ad_title+";url="+ad_url+";maxpos="+(height + 300)
+      );
+
+    for (var i =0; i< timeTable.length; i++)
+    {
+      navigator.sendBeacon("http://35.187.221.54:8080/api/v1/articles/"+post_id+"/scrolls/new?scroll_pos="+scrollTable[i]+";scroll_dur="+timeTable[i]);
+    };
+
+    navigator.sendBeacon(
+      "http://35.187.221.54:8080/api/v1/articles/"+post_id+"/clicks/new?click_x=null;click_y=null;btn_url=undefined;btn_text=undefined;view_ip="+user_ip
+    );
+  });</script> <script type="text/javascript" defer="" src="https://navivi.site/wp-content/cache/autoptimize/js/autoptimize_ce76d57f5304032668ac65c403223c35.js">
+</script>
+<script type="text/javascript" id="">(function(){var g="custom.timer",b=500,c=1,a=1,d=(new Date).getTime(),h=function(){var e=(new Date).getTime();window.dataLayer.push({event:g,"custom.timerCurrentTime":e,"custom.timerElapsedTime":e-d,"custom.timerStartTime":d,"custom.timerEventNumber":a,"custom.timerId":f,"custom.timerInterval":b,"custom.timerLimit":c});a+=1;c<a&&window.clearInterval(f)},f=window.setInterval(h,b)})();</script>
+<script type="text/javascript" id="">(function(){var g="custom.timer",b=500,c=1,a=1,d=(new Date).getTime(),h=function(){var e=(new Date).getTime();window.dataLayer.push({event:g,"custom.timerCurrentTime":e,"custom.timerElapsedTime":e-d,"custom.timerStartTime":d,"custom.timerEventNumber":a,"custom.timerId":f,"custom.timerInterval":b,"custom.timerLimit":c});a+=1;c<a&&window.clearInterval(f)},f=window.setInterval(h,b)})();</script>
+<script type="text/javascript" id="">(function(){var g="custom.timer",b=500,c=1,a=1,d=(new Date).getTime(),h=function(){var e=(new Date).getTime();window.dataLayer.push({event:g,"custom.timerCurrentTime":e,"custom.timerElapsedTime":e-d,"custom.timerStartTime":d,"custom.timerEventNumber":a,"custom.timerId":f,"custom.timerInterval":b,"custom.timerLimit":c});a+=1;c<a&&window.clearInterval(f)},f=window.setInterval(h,b)})();</script>
+<script type="text/javascript" id="">(function(){var g="custom.timer",b=500,c=1,a=1,d=(new Date).getTime(),h=function(){var e=(new Date).getTime();window.dataLayer.push({event:g,"custom.timerCurrentTime":e,"custom.timerElapsedTime":e-d,"custom.timerStartTime":d,"custom.timerEventNumber":a,"custom.timerId":f,"custom.timerInterval":b,"custom.timerLimit":c});a+=1;c<a&&window.clearInterval(f)},f=window.setInterval(h,b)})();</script>
+	</body>
+</html>
